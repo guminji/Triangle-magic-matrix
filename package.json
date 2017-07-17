@@ -1,0 +1,11 @@
+{
+  "name": "Triangle-magic-matrix",
+  "version": "0.0.1",
+  "description":"Triangle-magic-matrix font-end project",
+  "dependencies":{
+    "express": "~4.13.1"
+  },
+  "scripts":{
+    "start":""
+  }
+}
