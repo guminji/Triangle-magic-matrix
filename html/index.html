@@ -2,25 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
-    <script src="libs/laya/laya.core.js"></script>
-    <!--封装了webgl渲染管线，如果使用webgl渲染，可以在初始化时调用Laya.init(1000,800,laya.webgl.WebGL);-->
-    <script src="libs/laya/laya.webgl.js"></script>
-    <!--是动画模块，包含了swf动画，骨骼动画等-->
-    <script src="libs/laya/laya.ani.js"></script>
-    <!--包含更多webgl滤镜，比如外发光，阴影，模糊以及更多-->
-    <script src="libs/laya/laya.filter.js"></script>
-    <!--封装了html动态排版功能-->
-    <script src="libs/laya/laya.html.js"></script>
-    <!--粒子类库-->
-    <script src="libs/laya/laya.particle.js"></script>
-    <!--提供tileMap解析支持-->
-    <script src="libs/laya/laya.tiledmap.js"></script>
-    <!--提供了制作UI的各种组件实现-->
-    <script src="libs/laya/laya.ui.js"></script>
+    <meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta name='full-screen' content='true' />
+    <meta name='screen-orientation' content='portrait' />
+    <meta name='x5-fullscreen' content='true' />
+    <meta name='360-fullscreen' content='true' />
+    <meta http-equiv='expires' content='0' />
     <title>Title</title>
+    <script src="../js/libs/polyfill/polyfill.min.js"></script>
+    <script src="../js/libs/eventEmitter/EventEmitter.min.js"></script>
+    <script>
+        var GM =GM?GM:{};
+        GM.staticVersion = '20170718';
+    </script>
 </head>
 <body>
-
+    <!--核心包，封装了显示对象渲染，事件，时间管理，时间轴动画，缓动，消息交互,socket，本地存储，鼠标触摸，声音，加载，颜色滤镜，位图字体等-->
+    <script src="../js/libs/laya/laya.core.js"></script>
+    <!--封装了webgl渲染管线，如果使用webgl渲染，可以在初始化时调用Laya.init(1000,800,laya.webgl.WebGL);-->
+    <script src="../js/libs/laya/laya.webgl.js"></script>
+    <!--是动画模块，包含了swf动画，骨骼动画等-->
+    <script src="../js/libs/laya/laya.ani.js"></script>
+    <!--包含更多webgl滤镜，比如外发光，阴影，模糊以及更多-->
+    <script src="../js/libs/laya/laya.filter.js"></script>
+    <!--封装了html动态排版功能-->
+    <script src="../js/libs/laya/laya.html.js"></script>
+    <!--粒子类库-->
+    <script src="../js/libs/laya/laya.particle.js"></script>
+    <!--提供tileMap解析支持-->
+    <script src="../js/libs/laya/laya.tiledmap.js"></script>
+    <!--提供了制作UI的各种组件实现-->
+    <script src="../js/libs/laya/laya.ui.js"></script>
+    <script src="../js/game/config.js"></script>
+    <script src="../js/game/loading.js"></script>
+    <script src="../js/game/room.js"></script>
+    <script src="../js/game/init.js"></script>
 </body>
 </html>
